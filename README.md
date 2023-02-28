@@ -93,7 +93,7 @@
    ```sh
    python manage.py runserver
    ```
-#### Go to http://127.0.0.0:8000/ to access the app (username:marc, pwd: secret)
+#### Go to http://127.0.0.0:8000/ to access the app
 
 ### Run redis with docker
    ```sh
@@ -102,7 +102,14 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- Ressources -->
+## Ressources
+- [Django Channels](https://channels.readthedocs.io/en/stable/introduction.html)
+- [Websockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [Django Channels Tutorial - Dennis Ivy](https://www.youtube.com/watch?v=cw8-KFVXpTE)
 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
