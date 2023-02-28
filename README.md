@@ -89,6 +89,11 @@
    pip install -r requirements.txt
    ```
       
+#### Migrate the database
+   ```sh
+   python manage.py migrate
+   ```
+
 #### Access to the App by running the server
    ```sh
    python manage.py runserver
