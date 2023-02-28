@@ -1,0 +1,24 @@
+{% extends 'partials/base.html' %}
+{% block title %} ChatSockets {% endblock %}
+{% block content %}
+    <section class="signup">
+        <h1>Welcome to ChatSockets!</h1>
+        <h2>Register to access the different chatrooms.</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-item">
+                {{ form.username.label_tag }}
+                {{ form.username }}
+                {{ form.username.errors }}
+                {{ form.password1.label_tag }}
+                {{ form.password1 }}
+                {{ form.password1.errors }}
+                {{ form.password2.label_tag }}
+                {{ form.password2 }}
+                {{ form.password2.errors }}
+            </div>
+            <button class="btn-submit" type="submit">Register</button>
+        </form>
+    <p>Already have an account? <a href="{% url 'user:login' %}">Login</a></p>
+    </section>
+{% endblock %}

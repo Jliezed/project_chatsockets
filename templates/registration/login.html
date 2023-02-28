@@ -1,0 +1,29 @@
+{% extends "partials/base.html" %}
+
+{% block title %} ChatSocket | Login {% endblock %}
+
+
+{% block content %}
+
+    <section class="login">
+        <h1>Welcome Back</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="form-item">
+                {{ form.username.label_tag }}
+                {{ form.username }}
+                {{ form.username.non_field_errors }}
+            </div>
+            <div class="form-item">
+                {{ form.password.label_tag }}
+                {{ form.password }}
+                {{ form.password.errors }}
+                {{ form.non_field_errors }}
+            </div>
+            <button class="btn-login">Login</button>
+            <p class="no-account">Don't have an account ? <a href="{% url 'chatapp:signup' %}">Register</a>
+            </p>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'sass/main.css' %}">
+</head>
+<body>
+{% block content %}
+{% endblock %}
+
+	<script type="module" src="{% static "js/index.js" %}"></script></body>
+</html>

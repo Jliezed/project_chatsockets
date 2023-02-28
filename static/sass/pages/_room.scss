@@ -1,0 +1,63 @@
+.room {
+  display: flex;
+  flex-direction: column;
+  background-color: #004643;
+  width: 80%;
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+
+  & .box-messages {
+    height: 300px;
+    overflow: scroll;
+    margin: 5% 0;
+    background-color: white;
+    border-radius: 10px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & .my-message {
+      width: unset;
+      text-align: right;
+      color: black;
+      background-color: $paragraph;
+      margin: 0;
+      padding: 10px;
+    }
+
+    & .others-message {
+      text-align: left;
+      color: black;
+      background-color: lighten($paragraph-pink, 10%);
+      margin: 0;
+      padding: 10px;
+    }
+  }
+
+  & input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 3px;
+  }
+
+  & input[type="button"] {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: $button;
+    padding: 3px 0;
+
+    &:hover {
+      background-color: darken($button, 10%);
+    }
+  }
+}

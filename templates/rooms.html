@@ -1,0 +1,15 @@
+{% extends 'partials/base.html' %}
+{% block title %}
+ChatSockets | Rooms
+{% endblock %}
+{% block content %}
+    <section class="rooms">
+        <h1>Select a room:</h1>
+        <form method="post" onclick="this.submit()">
+            {% csrf_token %}
+            <div class="form-item">
+                {{ form.room_name }}
+            </div>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+}
+
+html {
+  background-color: #004643;
+  font-family: "Futura", sans-serif;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  background-color: #004643;
+  width: 70%;
+  margin: 7% auto;
+  padding: 5%;
+  border-radius: 10px;
+  color: white;
+}
+.signup h1 {
+  text-align: center;
+}
+.signup h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.signup form {
+  display: flex;
+  flex-direction: column;
+}
+.signup form .form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.signup form .form-item label {
+  margin: 5px 0;
+}
+.signup form .form-item input {
+  all: unset;
+  border: solid 1px #e6e6e6;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  color: black;
+}
+.signup form button {
+  all: unset;
+  border-radius: 5px;
+  background-color: #f9bc60;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+.signup form button:hover {
+  background-color: #f7a72f;
+  cursor: pointer;
+}
+.signup p a {
+  text-decoration: none;
+  color: #abd1c6;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  background-color: #004643;
+  width: 70%;
+  margin: 7% auto;
+  padding: 5%;
+  border-radius: 10px;
+  color: white;
+}
+.login h1 {
+  text-align: center;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+.login form .form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.login form .form-item label {
+  margin: 5px 0;
+}
+.login form .form-item input {
+  all: unset;
+  border: solid 1px #e6e6e6;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  color: black;
+}
+.login form button {
+  all: unset;
+  border-radius: 5px;
+  background-color: #f9bc60;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+.login form button:hover {
+  background-color: #f7a72f;
+  cursor: pointer;
+}
+.login form p a {
+  text-decoration: none;
+  color: #abd1c6;
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  background-color: #004643;
+  width: 50%;
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.rooms .form-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rooms .form-item #id_room_name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rooms .form-item #id_room_name div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.rooms .form-item #id_room_name div label {
+  width: 100%;
+}
+.rooms .form-item #id_room_name div label input {
+  display: none;
+}
+.rooms .form-item #id_room_name div:hover {
+  background-color: #f9bc60;
+  color: black;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  background-color: #004643;
+  width: 80%;
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.room .box-messages {
+  height: 300px;
+  overflow: scroll;
+  margin: 5% 0;
+  background-color: white;
+  border-radius: 10px;
+}
+.room .box-messages::-webkit-scrollbar {
+  display: none;
+}
+.room .box-messages .my-message {
+  width: unset;
+  text-align: right;
+  color: black;
+  background-color: #abd1c6;
+  margin: 0;
+  padding: 10px;
+}
+.room .box-messages .others-message {
+  text-align: left;
+  color: black;
+  background-color: #e98c8d;
+  margin: 0;
+  padding: 10px;
+}
+.room input[type=text] {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  color: black;
+  padding: 3px;
+}
+.room input[type=button] {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #f9bc60;
+  padding: 3px 0;
+}
+.room input[type=button]:hover {
+  background-color: #f7a72f;
+}
+
+/*# sourceMappingURL=main.css.map */
